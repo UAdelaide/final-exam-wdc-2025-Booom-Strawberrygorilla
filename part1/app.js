@@ -61,7 +61,7 @@ app.get('/api/walkers/summary', async (req, res) => {
             COUNT(r.rating_id) AS total_ratings,
             (
             SELECT COUNT(*) FROM WalkRuquests w
-            JOIN WalkAP
+            JOIN WalkApplications a ON a.request_id = 
             )
             `
         );

@@ -8,10 +8,11 @@ let db;
 
 (async () => {
   try {
+    // Now connect to the created database
     db = await mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: '',
+      host: 'localhost',
+      user: 'root',
+      password: '',
         database: 'DogWalkService'
     });
 

@@ -31,7 +31,9 @@ app.get{'/api/dogs', asyns (req, res) => {
             JOIN Users u ON d.owner_id = u.user_id`
         );
         res.json(rows);
-    } catch
+    } catch (err) {
+    res.status(500).json({ error: 'Failed to fetch books' });
+  }
 }
 
 }

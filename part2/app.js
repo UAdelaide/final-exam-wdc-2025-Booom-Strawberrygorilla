@@ -12,10 +12,10 @@ app.use(express.static(path.join(__dirname, '/public')));
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 
-const session = require('express-session'); //start Express Session
+const session = require('express-session'); // start Express Session
 app.use(session({
   secret: 'dogsecret', // Ensure cookies are not tampered with
-  resave: false,
+  resave: false,  
   saveUninitialized: true,
 }));
 

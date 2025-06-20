@@ -1,5 +1,6 @@
 var express = require('express');
 var mysql = require('mysql2/promise');
+const fs = require('fs');
 var app = express();
 
 app.use(express.json());

@@ -19,4 +19,10 @@ let db;
     await connection.query('CREATE DATABASE IF NOT EXISTS testdb');
     await connection.end();
 
-    db
+    db = await mysql.createConnection({
+          host: 'localhost',
+          user: 'root',
+          password: '',
+          database: 'Dog'
+        });
+

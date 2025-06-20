@@ -6,7 +6,8 @@ CreateApp({
 
     onMounted(async () => {
         try{
-            const res = await fetch('')
+            const res = await fetch('https://images.dog.ceo/breeds/mudhol-indian/Indian-Mudhol.jpg');
+            const
         }
     }
 )

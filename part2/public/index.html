@@ -85,7 +85,7 @@
 
               dogs.value = withImages;
             } catch (err){
-              console.error('Error loading dogs:')
+              console.error('Error loading dogs:', err);
 
             }
           }
@@ -96,7 +96,7 @@
 
 
       methods:{
-        async login(){
+        async functionlogin(){
           try {
             // Send a POST request to the backend login API(inc email & password)
             const res = await fetch('/api/users/login', {

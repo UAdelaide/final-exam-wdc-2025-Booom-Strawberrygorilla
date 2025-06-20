@@ -15,4 +15,4 @@ let db;
           database: 'DogWalkService'
         });
 
-        console
+        console.log

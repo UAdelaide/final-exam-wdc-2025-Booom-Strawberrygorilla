@@ -12,9 +12,9 @@ app.use(express.static(path.join(__dirname, '/public')));
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 
-const session = require('express-session');
+const session = require('express-session'); //
 app.use(session({
-  secret: 'dogsecret',
+  secret: 'dogsecret', // Ensure cookies are not tampered with
   resave: false,
   saveUninitialized: true,
 }));

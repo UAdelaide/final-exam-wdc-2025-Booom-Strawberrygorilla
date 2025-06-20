@@ -6,7 +6,7 @@ CreateApp({
 
     onMounted(async () => {
         try{
-            const res = await fetch()
+            const res = await fetch('')
         }
     }
 )

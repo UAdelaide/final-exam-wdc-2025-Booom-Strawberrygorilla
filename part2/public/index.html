@@ -15,7 +15,7 @@
 
     <a href="owner-dashboard.html" class="btn btn-outline-primary me-2">Owner Dashboard</a>
     <a href="walker-dashboard.html" class="btn btn-outline-success">Walker Dashboard</a>
-  </div>
+
 
   <!--login form-->
   <div class ="card p-4 mb-3">
@@ -30,7 +30,7 @@
     <button class="btn btn-primary" @click="login">Login</button>
     <div v-if="error" class="text-danger mt-2">{{ error }}</div>
   </div>
-
+  </div>
 
   <script>
     const { createApp } = Vue;

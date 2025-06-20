@@ -78,9 +78,10 @@
               const withImages = await Promise.all(
                 dogData.map(async(dog) => {
                   try{
-                  const imgRes = await fetch('https://dog.ceo/api/breeds/image/random');
-                  const imgJson = await imgRes.json();
-                  return{ ...dog, image: imgJson.message};
+                    const imgRes = await fetch('https://dog.ceo/api/breeds/image/random');
+                    const imgJson = await imgRes.json();
+                    return{ ...dog, image: imgJson.message};
+                  }
                 })
               );
 

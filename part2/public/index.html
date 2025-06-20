@@ -56,11 +56,11 @@
 
             const result = await res.json();
 
-        if(!res.ok) throw new Error(result.error || 'Login failed');
+            if(!res.ok) throw new Error(result.error || 'Login failed');
 
-        if(result.user.role === 'owner'){
-          window.location.href = 'owner-dashboard.html';
-        }
+            if(result.user.role === 'owner'){
+              window.location.href = 'owner-dashboard.html';
+            }
       }
         }
       }

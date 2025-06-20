@@ -7,4 +7,4 @@ app.use(express.json());
 let db;
 
 (async () => {
-  try {}）
+  try {}

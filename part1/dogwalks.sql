@@ -62,3 +62,4 @@ INSERT INTO Users (username, email, password_hash, role) VALUES
 ('ellieowner', 'ellie@example.com', 'hashed654', 'owner');
 
 INSERT INTO Dogs (owner_id, name, size) VALUES
+((SELECT ))

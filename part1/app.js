@@ -58,7 +58,7 @@ app.get('/api/walkers/summary', async (req, res) => {
     try{
         const [rows] = await db.execute(
             `SELECT u.username AS walker_username,
-            
+            COUNT(r.rating_id)
             `
         );
         res.json(rows);

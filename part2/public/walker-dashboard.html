@@ -45,11 +45,10 @@
         const error = ref('');
 
         async function getCurrentUser() {
-          try{
-            const res = await fetch('/api/users/me', {
-              credentials: 'include'
-            });
-            if(!)
+          if (!res.ok) throw new Error('Failed to load walk requests');
+            walks.value = await res.json();
+          } catch (err) {
+            error.value = err.message;
           }
         }
 

@@ -81,10 +81,11 @@ router.get('/mine/dogs', async(req, res)=>{
       [req.session.user.user_id]
     );
     res.json(rows);
+  }catch (err) {
+    console.error('Error fetching dogs:', err);
+    res.status(500).json({ error: 'Failed to fetch dogs' });
   }
 });
-
-
 
 
 module.exports = router;

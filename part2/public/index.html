@@ -60,7 +60,9 @@
 
             if(result.user.role === 'owner'){
               window.location.href = 'owner-dashboard.html';
-            }else id
+            }else if (result.user.role === 'walker'){
+              
+            }
 
             }
           }catch (err){

@@ -5,7 +5,9 @@ CreateApp({
     const dogImage = ref('');
 
     onMounted(async () => {
-        
+        try{
+            const res = await fetch()
+        }
     }
 )
 

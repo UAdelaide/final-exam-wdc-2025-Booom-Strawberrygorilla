@@ -65,7 +65,7 @@ INSERT INTO Dogs (owner_id, name, size) VALUES
 ((SELECT user_id from Users where username = 'alice123'), 'Max', 'medium'),
 ((SELECT user_id from Users where username = 'carol123'), 'Bella', 'small'),
 ((SELECT user_id from Users where username = 'alice123'), 'Ruby', 'medium'),
-((SELECT user_id from Users where username = 'davidwalker'), 'Alex', 'small'),
+((SELECT user_id from Users where username = 'ellieowner'), 'Alex', 'small'),
 ((SELECT user_id from Users where username = 'ellieowner'), 'Angle', 'large');
 
 INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status) VALUES

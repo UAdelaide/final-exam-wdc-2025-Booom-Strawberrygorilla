@@ -8,7 +8,7 @@ CreateApp({
         try{
             const res = await fetch('https://images.dog.ceo/breeds/mudhol-indian/Indian-Mudhol.jpg');
             const data = aeait res.json();
-            d
+            dogImage.value = data.message;
         }
     }
 )

@@ -75,7 +75,9 @@
               if (!res.ok) throw new Error('Failed to fetch dogs');
               const dogData = await res.json();
 
-              const with
+              const withImages = await Promise.all(
+                dogData
+              )
             }
           }
 

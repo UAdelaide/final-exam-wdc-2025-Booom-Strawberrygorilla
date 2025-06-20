@@ -14,9 +14,9 @@ CreateApp({
      }
     });
 
-    return {dogImage}
+    return {dogImage};
 
 
 
     }
-})
+}).mount('#app')

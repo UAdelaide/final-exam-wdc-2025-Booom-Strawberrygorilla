@@ -48,7 +48,7 @@
       methods:{
         async login(){
           try {
-            // 
+            // Send a POST request to the backend login API(incl)
             const res = await fetch('/api/users/login', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },

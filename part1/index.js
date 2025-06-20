@@ -4,7 +4,8 @@ CreateApp({
     setup(){
     const dogImage = ref('');
 
-    
+    onMounted(async ()
+)
 
 
 

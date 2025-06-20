@@ -70,7 +70,8 @@ router.post('/logout',(req,res)=>{
   });
 });
 
-// Get all dogs owned by the currently
+// Get all dogs owned by the currently logged-in user
+router.
 
 
 

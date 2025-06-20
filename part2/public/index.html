@@ -75,6 +75,8 @@
               if (!res.ok) throw new Error('Failed to fetch dogs');
               const dogData = await res.json();
 
+              console.log("Fetched dog data:", dogData);
+
               const withImages = await Promise.all(
                 dogData.map(async(dog) => {
                   try{

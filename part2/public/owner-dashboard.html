@@ -136,7 +136,7 @@
   document.getElementById('logout').addEventListener('click',async () => {
     const res = await fetch('/api/users/logout', {
       method:'POST',
-      credentials: 'include',
+      credentials: 'include'
     });
     if(res.ok){
       // back to home page

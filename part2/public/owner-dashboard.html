@@ -134,7 +134,7 @@
 <button id="logout" class="btn btn-danger">logout</button><!-- in a red bt -->
 <script>
   document.getElementById('logout').addEventListener('click',async () => {
-    const res = await fetch('')
+    const res = await fetch('/api/users/logout', {method:'Po'})
   }
   )
 </script>

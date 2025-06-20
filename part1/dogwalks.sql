@@ -69,4 +69,4 @@ INSERT INTO Dogs (owner_id, name, size) VALUES
 ((SELECT user_id from Users where username = 'ellieowner'), 'Angle', 'medium');
 
 INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status) VALUES
-((SELECT dog_id from Dogs where name = 'Max'), '2025-06-10 08:00:00', '30', ''),
+((SELECT dog_id from Dogs where name = 'Max'), '2025-06-10 08:00:00', '30', 'Parklands', 'open'),

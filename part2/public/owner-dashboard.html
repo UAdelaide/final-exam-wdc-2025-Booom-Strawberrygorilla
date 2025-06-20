@@ -123,7 +123,7 @@
         const myDogs = ref([]);
         async function loadMyDogs(){
           try{
-            const res = await fetch('/api/users/mine/dogs');
+            const res = await fetch('/api/dogs/mine');
             myDogs.value = await res.json();
           } catch (err) {
             error.value= 'Failed to fetch dogs';

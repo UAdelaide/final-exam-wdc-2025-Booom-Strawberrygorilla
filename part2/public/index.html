@@ -55,7 +55,7 @@
               body: JSON.stringify({ email: this.email, password: this.password })
         });
 
-            const result = await res.json();
+            const result = await res.json(); //return
 
             if(!res.ok) throw new Error(result.error || 'Login failed');
 

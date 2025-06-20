@@ -62,8 +62,8 @@ app.get('/api/walkers/summary', async (req, res) => {
             (
             SELECT COUNT(*) FROM WalkRuquests w
             JOIN WalkApplications a ON a.request_id = w.request_id AND a.walker_id = u.user_id
-            WHERE w.staus = 'compl'
-            )
+            WHERE w.staus = 'completed'
+            )AS completed
             `
         );
         res.json(rows);

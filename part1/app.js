@@ -21,3 +21,5 @@ let db;
     console.error('Error setting up database. Ensure Mysql is running: service mysql start', err);
   }
 })();
+
+// /api/gog

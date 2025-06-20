@@ -23,4 +23,4 @@ let db;
 })();
 
 // /api/dogs
-app.get{'/api/dogs', asyns (req)}
+app.get{'/api/dogs', asyns (req, res)}

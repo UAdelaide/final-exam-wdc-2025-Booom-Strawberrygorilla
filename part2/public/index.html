@@ -43,19 +43,18 @@
 
 
   <!--login form-->
-  <div class ="card p-4 mb-3">
-    <div class ="mb-3">
-      <label>Email</label>
-      <input v-model="email" type="email" class="form-control" required><!-- Two-way binding email -->
-    </div>
-    <div class ="mb-3">
-      <label>Password</label>
-      <input v-model="password" type="password" class="form-control" required>
-    </div>
-    <button class="btn btn-primary" @click="login">Login</button>
-    <div v-if="error" class="text-danger mt-2">{{ error }}</div> <!--show error-->
-    </div>
+  <div class="card p-4 mb-3">
+  <div class="mb-3">
+    <label>Email</label>
+    <input v-model="email" type="email" class="form-control" required>
   </div>
+  <div class="mb-3">
+    <label>Password</label>
+    <input v-model="password" type="password" class="form-control" required>
+  </div>
+  <button class="btn btn-primary" @click="login">Login</button>
+  <div v-if="error" class="text-danger mt-2">{{ error }}</div>
+</div>
 
   <!--login logic vue-->
   <script>

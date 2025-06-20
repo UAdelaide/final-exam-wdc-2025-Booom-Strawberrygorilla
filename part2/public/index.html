@@ -60,11 +60,11 @@
   <!--login logic vue-->
   <script>
     const { createApp, ref, onMounted } = Vue;
-    
+
     createApp({
       data() {
         return {
-          message: 'Welcome to the Dog Walking Service!',
+          message: ref'Welcome to the Dog Walking Service!',
           email: '',
           password: '',
           error: ''

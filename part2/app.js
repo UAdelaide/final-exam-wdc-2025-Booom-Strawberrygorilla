@@ -17,7 +17,7 @@ app.use('/api/users', userRoutes);
 
 const session = require('express-session');
 app.use(session({
-    secret
+    secret: 'dogsecre'
 }))
 // Export the app instead of listening here
 module.exports = app;

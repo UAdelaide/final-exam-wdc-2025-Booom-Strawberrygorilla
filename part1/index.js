@@ -14,7 +14,7 @@ CreateApp({
      }
     });
 
-
+    return {dogImage}
 
 
 

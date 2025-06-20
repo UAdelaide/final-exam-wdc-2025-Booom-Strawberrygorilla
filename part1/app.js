@@ -65,7 +65,7 @@ app.get('/api/walkers/summary', async (req, res) => {
             WHERE w.staus = 'completed'
             )AS completed_walks
             FROM Users u
-            LEFT JOIN
+            LEFT JOIN WalkRatings r ON u.user_id = r.
             `
         );
         res.json(rows);

@@ -71,7 +71,7 @@ router.post('/logout',(req,res)=>{
 });
 
 // Get all dogs owned by the currently logged-in user
-router.
+router.get('/mine/dogs',)
 
 
 

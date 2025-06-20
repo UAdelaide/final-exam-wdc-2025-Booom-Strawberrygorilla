@@ -67,7 +67,9 @@ router.get('/dogs',asyns(req,res) => {
       FROM Dogs
     `);
     res.json(rows);
-  } catch (err) {}
+  } catch (err) {
+    
+  }
 });
 
 module.exports = router;

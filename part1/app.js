@@ -43,7 +43,8 @@ app.get('/api/walkrequests/open', async (req, res) => {
             `SELECT r.request, d_name AS dog_name, r.requested_time, r.duration_minutes, u.usernames AS owner_username
             FROM WalkRequests r
             JOIN Dogs d ON r.dog_id = d.dog_id
-            JOIN Users
+            JOIN Users u ON d.owner_id = u.user_id
+            
 
             `
         );

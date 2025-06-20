@@ -18,7 +18,8 @@ app.use('/api/users', userRoutes);
 const session = require('express-session');
 app.use(session({
     secret: 'dogsecret',
-    resave:
+    resave: false,
+    saveUninitialized
 }));
 // Export the app instead of listening here
 module.exports = app;

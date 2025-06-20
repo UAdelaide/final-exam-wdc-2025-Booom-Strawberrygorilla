@@ -57,7 +57,7 @@ createApp({
 
     onMounted(async () => {
         try{
-            const res = await fetch('https://images.dog.ceo/breeds/mudhol-indian/Indian-Mudhol.jpg');
+            const res = await fetch('https://dog.ceo/api/breeds/image/random');
             const data = await res.json();
             dogImage.value = data.message;
         } catch (error) {

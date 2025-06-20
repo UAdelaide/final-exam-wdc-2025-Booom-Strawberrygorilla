@@ -59,4 +59,7 @@ router.post('/:id/apply', async (req, res) => {
   }
 });
 
+// GET all registered dogs
+ro
+
 module.exports = router;

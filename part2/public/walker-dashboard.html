@@ -92,7 +92,10 @@
 <button id="logout" class="btn btn-danger">logout</button><!-- in a red bt -->
 <script>
   document.getElementById('logout').addEventListener('click',async () => {
-    const res = await fetch('/api/users/logout', {method:'POST'});
+    const res = await fetch('/api/users/logout', {
+      method:'POST',
+      credentials: 'include'
+    });
     if(res.ok){
       // back to home page
       window.location.href = 'index.html';

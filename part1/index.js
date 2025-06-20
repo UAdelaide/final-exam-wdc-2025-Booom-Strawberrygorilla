@@ -1,5 +1,5 @@
 const {createApp, ref, onMounted} = VTTCue;
 
 CreateApp({
-    const dogImage
+    const dogImage = ref('');
 })

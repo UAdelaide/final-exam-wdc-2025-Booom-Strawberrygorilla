@@ -62,7 +62,9 @@ router.post('/:id/apply', async (req, res) => {
 // GET all registered dogs
 router.get('/dogs',asyns(req,res) => {
   try{
-    const [rows] =await
+    const [rows] =await db.query{
+      
+    }
   }
 })
 

@@ -16,6 +16,8 @@ app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 
 const session = require('express-session');
-app.use
+app.use(session({
+    secret
+}))
 // Export the app instead of listening here
 module.exports = app;

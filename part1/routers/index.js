@@ -3,4 +3,4 @@ var router = express.Router();
 var userRoutes = require('./user');
 router.use('/api', userRoutes);
 
-module.export
+module.exports = router;

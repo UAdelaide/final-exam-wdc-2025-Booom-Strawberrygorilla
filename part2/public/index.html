@@ -46,7 +46,7 @@
       },
 
       methods:{
-        asyns login(){
+        async login(){
           try{
             const res = await fetch('/api/users/login'), {
               method: 'POST',

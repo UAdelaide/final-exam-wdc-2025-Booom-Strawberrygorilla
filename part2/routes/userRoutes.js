@@ -66,10 +66,8 @@ router.post('/logout',(req,res)=>{
     }
     // clean cookie
     res.cleanCookie('connect.sid');
-    res.json({message: 'Logout sc'})
-  }
-
-  )
+    res.json({message: 'Logout successful'});
+  });
 }
 )
 

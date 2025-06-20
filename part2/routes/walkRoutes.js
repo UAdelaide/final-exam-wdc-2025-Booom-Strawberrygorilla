@@ -66,6 +66,8 @@ router.get('/dogs',asyns(req,res) => {
       SELECT dog_id, name, size, owner_id
       FROM Dogs
     `);
+    res.json(rows);
+    
   }
 });
 

@@ -136,7 +136,8 @@
   document.getElementById('logout').addEventListener('click',async () => {
     const res = await fetch('/api/users/logout', {method:'POST'});
     if(res.ok){
-      //
+      // back to home page
+      window.location
     }
   }
   )

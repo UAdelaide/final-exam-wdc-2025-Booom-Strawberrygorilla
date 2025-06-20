@@ -57,9 +57,10 @@
 
             const result = await res.json(); //return
 
-            // 
+            //
             if(!res.ok) throw new Error(result.error || 'Login failed');
-
+            
+            //Direct users to different pages based on their roles
             if(result.user.role === 'owner'){
               window.location.href = 'owner-dashboard.html';
             }else if (result.user.role === 'walker'){

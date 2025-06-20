@@ -60,6 +60,8 @@ router.post('/:id/apply', async (req, res) => {
 });
 
 // GET all registered dogs
-router.get('/dogs',asyns(req,res))
+router.get('/dogs',asyns(req,res) => {
+  try{}
+})
 
 module.exports = router;

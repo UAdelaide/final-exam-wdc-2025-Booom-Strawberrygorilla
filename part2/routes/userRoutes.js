@@ -75,6 +75,9 @@ router.get('/mine/dogs', async(req, res)=>{
   if(!req.session.user){
     return res.status(401).json({ error: 'Not logged in'});
   }
+  try {
+    const [rows] =await
+  }
 }
 )
 

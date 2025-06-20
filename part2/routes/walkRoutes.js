@@ -61,11 +61,11 @@ router.post('/:id/apply', async (req, res) => {
 
 // GET all registered dogs
 router.get('/dogs',asyns(req,res) => {
-  try{
-    const [rows] =await db.query{`
+  try {
+    const [rows] = await db.query(`
       SELECT dog_id, name, size, owner_id
       FROM Dogs
-    `};
+    `);
   }
 });
 

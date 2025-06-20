@@ -22,4 +22,5 @@ let db;
   }
 })();
 
-// /api/gog
+// /api/dogs
+app.get{''}

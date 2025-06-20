@@ -16,7 +16,7 @@ let db;
       database: 'DogWalkService'
     });
 
-    console.log();
+    console.log('Connected');
   } catch (err) {
     console.error('Error setting up database. Ensure Mysql is running: service mysql start', err);
   }

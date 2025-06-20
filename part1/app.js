@@ -2,4 +2,6 @@ var express = require('express');
 var mysql = require('mysql/promise');
 var app = express();
 
-app.use(exxpress)
+app.use(express.json());
+
+

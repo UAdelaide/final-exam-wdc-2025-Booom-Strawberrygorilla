@@ -61,7 +61,9 @@ router.post('/:id/apply', async (req, res) => {
 
 // GET all registered dogs
 router.get('/dogs',asyns(req,res) => {
-  try{}
+  try{
+    const [rows] =await
+  }
 })
 
 module.exports = router;

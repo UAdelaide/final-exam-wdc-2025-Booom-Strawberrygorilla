@@ -62,7 +62,8 @@
               window.location.href = 'owner-dashboard.html';
             }else if (result.user.role === 'walker'){
               windows.location.href='walker-dashboard.html'
-            }
+            }else {
+              this.error = 'Unknown user role';
 
             }
           }catch (err){

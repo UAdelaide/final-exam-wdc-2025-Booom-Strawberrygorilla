@@ -44,7 +44,17 @@
         const message = ref('');
         const error = ref('');
 
-        async function getCurrentUser() {
+        async function loadWalkRequests() {
+          try {
+            const res = await fetch('/api/walks');
+            if (!res.ok) throw new Error('Failed to load walk requests');
+            walks.value = await res.json();
+          } catch (err) {
+            error.value = err.message;
+          }
+        }
+
+                async function getCurrentUser() {
           try {
             const res = await fetch('/api/users/me', {
               credentials: 'include'
@@ -57,15 +67,6 @@
             }
         }
 
-        async function loadWalkRequests() {
-          try {
-            const res = await fetch('/api/walks');
-            if (!res.ok) throw new Error('Failed to load walk requests');
-            walks.value = await res.json();
-          } catch (err) {
-            error.value = err.message;
-          }
-        }
 
         async function applyToWalk(requestId) {
           try {

@@ -63,7 +63,7 @@ router.post('/:id/apply', async (req, res) => {
 router.get('/dogs',asyns(req,res) => {
   try{
     const [rows] =await db.query{
-      SELECT dogid, name , size
+      SELECT dogid, name , size, owner_id From dogs
     }
   }
 })

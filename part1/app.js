@@ -30,8 +30,8 @@ app.get{'/api/dogs', asyns (req, res) => {
             FROM Dogs d
             JOIN Users u ON d.owner_id = u.user_id`
         );
-        res.json()
-    }
+        res.json(rows);
+    } catch
 }
 
 }

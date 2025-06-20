@@ -62,10 +62,10 @@
     const { createApp, ref, onMounted } = Vue;
 
     createApp({
-      data() {
+      setup() {
         return {
           const message: ref('Welcome to the Dog Walking Service!'),
-          email: ref('');
+          const email: ref('');
           password: ref('');
           error: ref('');
 

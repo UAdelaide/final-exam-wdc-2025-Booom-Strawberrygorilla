@@ -54,7 +54,9 @@
           body: JSON.stringify({ email: this.email, password: this.password })
         });
 
-        const result = aw
+        const result = await res.json();
+
+        if(!res)
           }
         }
       }

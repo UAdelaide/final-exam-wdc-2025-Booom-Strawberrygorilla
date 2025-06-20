@@ -66,7 +66,7 @@
             }else if (result.user.role === 'walker'){
               window.location.href = 'walker-dashboard.html';
             }else {
-              this.error = 'Unknown user role';// show user error()
+              this.error = 'Unknown user role';// show user error(abnormal)
             }
           }catch (err){
             this.error = err.message;

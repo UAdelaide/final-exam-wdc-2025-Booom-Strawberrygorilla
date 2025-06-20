@@ -1,1 +1,3 @@
-const {createApp, ref, onMounted} = Vue
+const {createApp, ref, onMounted} = VTTCue;
+
+Create App

@@ -11,7 +11,8 @@ CreateApp({
             dogImage.value = data.message;
         } catch (error) {
         console.error('Failed to fetch dog image', error);
-    })
+     }
+    });
 
 
 

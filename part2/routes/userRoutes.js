@@ -73,7 +73,7 @@ router.post('/logout',(req,res)=>{
 // Get all dogs owned by the currently logged-in user
 router.get('/mine/dogs', async(req, res)=>{
   if(!req.session.user){
-    return
+    return res.status(401).json({ error: ""})
   }
 }
 )

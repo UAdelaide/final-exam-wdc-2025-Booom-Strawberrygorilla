@@ -53,7 +53,7 @@
       <input v-model="password" type="password" class="form-control" required>
     </div>
     <button class="btn btn-primary" @click="login">Login</button>
-    <div v-if="error" class="text-danger mt-2">{{ error }}</div> <!--show error-->
+    <div v-if="error" class="alert alert-danger">{{ error }}</div> <!--show error-->
     </div>
   </div>
 

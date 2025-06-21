@@ -10,6 +10,21 @@
 <body class="bg-light">
 
   <div id="app" class="container py-5">
+    <!--login form-->
+  <div class ="card p-4 mb-3">
+    <div class ="mb-3">
+      <label>Email</label>
+      <input v-model="email" type="email" class="form-control" required><!-- Two-way binding email -->
+    </div>
+    <div class ="mb-3">
+      <label>Password</label>
+      <input v-model="password" type="password" class="form-control" required>
+    </div>
+    <button class="btn btn-primary" @click="login">Login</button>
+    <div v-if="error" class="text-danger mt-2">{{ error }}</div> <!--show error-->
+    </div>
+  </div>
+  
     <h2 class="mt-5">All Registered Dogs</h2>
     <div class="table table-striped">
       <table class="table table-striped">
@@ -42,20 +57,6 @@
     <a href="walker-dashboard.html" class="btn btn-outline-success">Walker Dashboard</a>
 
 
-  <!--login form-->
-  <div class ="card p-4 mb-3">
-    <div class ="mb-3">
-      <label>Email</label>
-      <input v-model="email" type="email" class="form-control" required><!-- Two-way binding email -->
-    </div>
-    <div class ="mb-3">
-      <label>Password</label>
-      <input v-model="password" type="password" class="form-control" required>
-    </div>
-    <button class="btn btn-primary" @click="login">Login</button>
-    <div v-if="error" class="text-danger mt-2">{{ error }}</div> <!--show error-->
-    </div>
-  </div>
 
   <!--login logic vue-->
   <script>

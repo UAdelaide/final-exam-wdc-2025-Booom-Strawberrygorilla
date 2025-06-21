@@ -9,7 +9,7 @@ app.use(session({
   secret: 'dogsecret', // Ensure cookies are not tampered with
   resave: false, // not re-save if not modified
   saveUninitialized: true, // not initialized, a copy is saved
-    sameSite: 'lax',
+    sameSite: 'lax', 
     secure: false
 }));
 
